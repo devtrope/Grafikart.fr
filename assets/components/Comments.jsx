@@ -253,9 +253,9 @@ const Comment = memo(({ comment, editing, onEdit, onUpdate, onDelete, onReply, c
       <div className='comment__meta'>
         <div className='comment__author'>{comment.username}</div>
         <div className='comment__actions'>
-          <a className='comment__date' href={`#c${comment.id}`}>
+          <span className='comment__date'>
             <time-ago time={comment.createdAt} />
-          </a>
+          </span>
           <a href={anchor} onClick={handleReply}>
             <Icon name='reply' />
             Répondre
